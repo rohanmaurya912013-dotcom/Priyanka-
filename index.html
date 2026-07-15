@@ -1,65 +1,61 @@
+ ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday, Priyanka</title>
-<link rel="stylesheet" href="style.css">
-<link href="[https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap](https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap)" rel="stylesheet">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Birthday Countdown for Priyanka</title>
+ <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Montserrat:wght@300;400;600&amp;display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="particles-js"></div>
-<div class="overlay" id="welcomescreen">
-<h1>Happy Birthday, Priyanka</h1>
-<p>A little surprise made just for you.</p>
-<button id="enterbtn">Open Surprise</button>
-</div>
-<main id="main-content" class="hidden">
-<header>
-<h1>To Priyanka</h1>
-<button id="musictoggle">Play Music</button>
-</header>
-<section id="gallery">
-<h2>Memories</h2>
-<div class="grid">
-<div class="card"><img src="IMG-20260715-WA0002.jpg" alt="Photo 1"></div>
-<div class="card"><img src="IMG-20260715-WA0004.jpg" alt="Photo 2"></div>
-<div class="card"><img src="IMG-20260715-WA0005.jpg" alt="Photo 3"></div>
-<div class="card"><img src="IMG-20260715-WA0006.jpg" alt="Photo 4"></div>
-<div class="card"><img src="IMG-20260715-WA0007.jpg" alt="Photo 5"></div>
-<div class="card"><img src="IMG-20260715-WA0008.jpg" alt="Photo 6"></div>
-<div class="card"><img src="IMG-20260715-WA0009.jpg" alt="Photo 7"></div>
-<div class="card"><img src="IMG-20260715-WA0010.jpg" alt="Photo 8"></div>
-<div class="card"><img src="IMG-20260715-WA0011.jpg" alt="Photo 9"></div>
-<div class="card"><img src="IMG-20260715-WA0012.jpg" alt="Photo 10"></div>
-<div class="card"><img src="IMG-20260715-WA0013.jpg" alt="Photo 11"></div>
-<div class="card"><img src="IMG-20260715-WA0014.jpg" alt="Photo 12"></div>
-</div>
-</section>
-<section id="video">
-<h2>Message for You</h2>
-<div class="video-container">
-<button class="play-btn">Play</button>
-</div>
-</section>
-<section id="letter">
-<h2>A Heartful Letter</h2>
-<div class="glass-card">
-<p>Dearest Priyanka, wishing you a year as beautiful as your soul...</p>
-</div>
-</section>
-<section id="reasons">
-<h2>Why You're Special</h2>
-<div class="grid">
-<div class="glass-card">Kindness</div>
-<div class="glass-card">Radiance</div>
-<div class="glass-card">Wisdom</div>
-</div>
-</section>
-</main>
-<script src="[https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js](https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js)"></script>
-<script src="[https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js](https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js)"></script>
-<script src="script.js"></script>
+ <div id="particles-js"></div>
+ <div class="overlay" id="welcomescreen">
+ <h1 class="heart">Happy Birthday, Priyanka</h1>
+ <p>A little surprise made just for you.</p>
+ <button id="enterbtn">Open Surprise</button>
+ </div>
+ <main id="main-content" class="hidden">
+ <header>
+ <h1>To Priyanka</h1>
+ <music>
+ <button id="musicToggle" onclick="document.getElementById('duniyaSong').play()">Play Music</button>
+ <audio id="duniyaSong" src="duniya.mp3"></audio>
+ </music>
+ </header>
+ <section id="gallery">
+ <h2>Memories</h2>
+ <div class="grid">
+ <div class="card"><img src="IMG-20260715-WA0002.jpg" alt="Photo 1"></div>
+ <div class="card"><img src="IMG-20260715-WA0004.jpg" alt="Photo 2"></div>
+ <div class="card"><img src="IMG-20260715-WA0005.jpg" alt="Photo 3"></div>
+ <div class="card"><img src="IMG-20260715-WA0006.jpg" alt="Photo 4"></div>
+ <div class="card"><img src="IMG-20260715-WA0007.jpg" alt="Photo 5"></div>
+ <div class="card"><img src="IMG-20260715-WA0008.jpg" alt="Photo 6"></div>
+ <div class="card"><img src="IMG-20260715-WA0009.jpg" alt="Photo 7"></div>
+ <div class="card"><img src="IMG-20260715-WA0010.jpg" alt="Photo 8"></div>
+ <div class="card"><img src="IMG-20260715-WA0011.jpg" alt="Photo 9"></div>
+ <div class="card"><img src="IMG-20260715-WA0012.jpg" alt="Photo 10"></div>
+ <div class="card"><img src="IMG-20260715-WA0013.jpg" alt="Photo 11"></div>
+ <div class="card"><img src="IMG-20260715-WA0014.jpg" alt="Photo 12"></div>
+ </div>
+ </section>
+ <section id="video">
+ <h2>Message for You</h2>
+ <div class="video-container">
+ <div class="message-box">
+ <h3>Message for You</h3>
+ <p>I hope you like this little surprise. I wanted every day of this countdown to feel a little different, so I tried to make days one special too. I hope it brings a smile to your face and makes your days a little brighter. Just enjoy the little game and fun.</p>
+ </div>
+ <p>5 Days remaining in your Birthday</p>
+ </div>
+ </section>
+ </main>
+ <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>
+
+```
 
